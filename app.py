@@ -40,7 +40,7 @@ class InferlessPythonModel:
         else:
             output_list = []  # Handle the case where last_hidden_state is missing
         
-        return ResponseObjects(outputs=json.dumps(output_list))
+        return ResponseObjects(outputs=output_list)
 
     # perform any cleanup activity here
     def finalize(self,args):
